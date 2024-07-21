@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: white;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(36, 36, 36, 0.5), #000), url('back_netflix.jpg');
+    position: relative;
+    padding : 10px 8%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures items are spread out */
+    width: 100%; /* Full width */
+    padding: 1px 1px; /* Adjust padding as needed */
+}
+.logo{
+    width: 190px;
+    height:auto;
+    cursor: pointer;
+}
+.logo img{
+    width:100%;
+} 
+nav button{
+    border: 0;
+    outline: none;
+    background: rgb(206,12,12);
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 17px;
+    font-weight: 520;
+    border-radius: 4px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.lang-btn{
+    background: rgb(24, 23, 23);
+    border: 1px solid #645959;
+    block-size: 35px;
+    text-align: right;
+
+}
+.sign-btn{
+    block-size: 35px;
+    text-align: center;
+}
+.lang-btn i{
+    margin-left: 10px;
+}
+.header-text{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: 17%;
+    gap: 12px;
+}
+.header-text h1{
+    font-size: 45px;
+    line-height: 40px;
+    font-weight: 900;
+}
+.header-text h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.header-text p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.header-text .email{
+    display: flex;
+    gap: 6px;
+    border: 0;
+    outline: 0;
+    align-items: flex-start;
+    margin: auto;
+}
+.email input{
+    padding: 17px 80px;
+    outline: none;
+    border: 1px solid rgb(147, 130, 130);
+    border-radius: 4px;
+    background: rgba(36,36,36,0.5);
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+}
+.email button{
+    background: rgb(211,22,22);
+    padding: 13px 30px;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    font-size: 23px;
+    font-weight: 600;
+    color: #fff;
+}
+.email button i{
+    margin-left: 8px;
+}
+hr{
+    background: rgb(66,65,65);
+    width: 100%;
+    height: 7px;
+    border: 0;
+    outline: 0;
+}
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: white;
+} */
+/* ---------body section CSS code ------------- */
+.container{
+    width: 100%;
+    padding: 50px 0;
+}
+
+.body-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+}
+
+.text-col{
+    width: 50%;
+}
+
+.text-col h2{
+    font-size: 47px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+.text-col p{
+    font-size: 20px;
+
+}
+
+.img-col{
+    position: relative;
+}
+
+.img-col img{
+    width: 820px;
+    position: relative;
+}
+.img-col video{
+    position: absolute;
+    width: 425px;
+    top: 140px;
+    right: 197px;
+
+}
+.img-col1{
+    position: relative;
+    width: 300px;
+    height: 300px;   
+}
+.image-col img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+.overlay-btn {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 30px;
+    background-color: #e50914;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  /*  footer */
+
+/* body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+} */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(46, 46, 46);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.row .accordion{
+    width:90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.accordion-item {
+    border-bottom: 1px solid #070707; 
+    margin-bottom: 10px;
+    padding: 0 0;
+    width: 90%;
+    font-size: 22px;
+    font-weight: 500;   
+    background-color: rgb(46, 46, 46);
+}
+
+.accordion-title {
+    background-color: #414040;
+    padding: 35px;
+    cursor: pointer;
+    color: white;
+
+}
+
+.accordion-title:hover {
+    background-color: rgb(46, 46, 46);
+}
+
+.accordion-content {
+    font-size: 20px;
+    display: none;
+    padding: 3px;
+    color: white;
+    bottom: 0;
+  
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
+.faq .accordion-title::after{
+    content: '+';
+    float: right;
+    font-size: 32px;
+}
+/* .....FAQ section css....*/
+.email input{
+    padding: 16px 42px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-color: black;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.email button{
+    background: red;
+    padding: 16px 40px;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    font-size: 20px;
+    color: white;
+}
+.email button{
+    margin-left: 8px;
+}
+hr{
+    background: rgb(65, 64, 64);
+    width: 100%;
+    height: 7px;
+    border: 0;
+    outline: 0;
+}
+.faq{
+    width: 100%;
+}
+.faq h1{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 25px;
+    color: white;
+    font-weight: 600;
+}
+
+.faq .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.faq-footer .header-text{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #757272;
+}
+
+button{
+    border: 0 ;
+    outline: none;
+    background: rgb(7, 7, 7);
+    color: white;
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-left: 7px;
+    cursor: pointer;
+
+}
+.Submit i{
+    background: red;
+
+}
+.lang.btn{
+    background: transparent;
+    border: 1px solid white;
+
+}
+
+.lang.btn i{
+    margin-left: 6px;
+}
+/* .....Main footer css....*/
+.footer{
+    width: 100%;
+    padding: 50px 12% 20px;
+}
+
+.footer .row{
+    width:90%;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    gap: 50px;
+    padding: 20px 0;
+}
+
+.footer .row .col a{
+    display: block;
+    color: rgb(161, 161, 161);
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 550;
+}
+.footer h2{
+    font-size: 18px;
+    color:  rgb(197, 194, 194);
+    margin-bottom: 30px;
+}
+.footer p{
+    color:rgb(213, 210, 210) ;
+}
+.header-text{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: 15%;
+}
+.header-text p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.header-text .email{
+    display: flex;
+    gap: 6px;
+    border: 0;
+    outline: 0;
+    align-items: center;
+    margin: auto;
+}
+/* Media query for small Screen*/
+@media only screen and (max-width:850px) and(min-width:300px){
+    header{
+        width: 100%;;
+        height: auto;
+    }
+    nav.logo{
+        width: 100px;
+    }
+    button{
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+    .header-text{
+        margin-top: 12%;
+    }
+    .header-text h3, .header-text p{
+        font-size: 18px;
+    }
+    .header-text h1{
+        font-size: 40px;
+    }
+    .body-section{
+        flex-direction: column;
+    }
+    .second, .forth{
+        flex-direction: column-reverse;
+    }
+    .faq h1{
+        font-size: 32px;
+    }
+    .faq .row button{
+        width: 90%;
+        font-size: 20px;
+    }
+    .faq-footer{
+        width: 80%;
+        margin: auto;
+    }
+    .footer .row{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* 
+@media only screen and (max-width:1380px){
+    .text-col h2 {
+        font-size: 35px;
+        margin-bottom: 20px;
+        font-weight: 900;
+    }
+    .text-col p {
+        font-size: 18px;
+    }
+} */
+
